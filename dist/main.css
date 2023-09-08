@@ -576,24 +576,12 @@ video {
   max-width: 1280px;
 }
 
-.absolute {
-  position: absolute;
-}
-
-.relative {
-  position: relative;
-}
-
-.bottom-0 {
-  bottom: 0px;
-}
-
-.right-0 {
-  right: 0px;
-}
-
 .m-1 {
   margin: 0.25rem;
+}
+
+.m-2 {
+  margin: 0.5rem;
 }
 
 .m-\[12px\] {
@@ -648,10 +636,6 @@ video {
   height: 350px;
 }
 
-.h-\[705px\] {
-  height: 705px;
-}
-
 .h-\[80px\] {
   height: 80px;
 }
@@ -672,16 +656,8 @@ video {
   width: 128px;
 }
 
-.w-\[204px\] {
-  width: 204px;
-}
-
 .w-\[305px\] {
   width: 305px;
-}
-
-.w-\[705px\] {
-  width: 705px;
 }
 
 .w-full {
@@ -829,10 +805,6 @@ video {
   background-image: url('./img/block.png');
 }
 
-.bg-\[url\(\'\.\/img\/close\.png\'\)\] {
-  background-image: url('./img/close.png');
-}
-
 .bg-\[url\(\'\.\/img\/main\.png\'\)\] {
   background-image: url('./img/main.png');
 }
@@ -859,6 +831,10 @@ video {
 
 .p-16 {
   padding: 4rem;
+}
+
+.p-2 {
+  padding: 0.5rem;
 }
 
 .p-3 {
@@ -958,10 +934,6 @@ video {
   line-height: 1.25rem;
 }
 
-.leading-6 {
-  line-height: 1.5rem;
-}
-
 .leading-7 {
   line-height: 1.75rem;
 }
@@ -1015,12 +987,45 @@ video {
 }
 
 @media (min-width: 768px) {
+  .md\:absolute {
+    position: absolute;
+  }
+
+  .md\:relative {
+    position: relative;
+  }
+
+  .md\:bottom-0 {
+    bottom: 0px;
+  }
+
+  .md\:right-0 {
+    right: 0px;
+  }
+
   .md\:flex {
     display: flex;
   }
 
+  .md\:h-\[585px\] {
+    height: 585px;
+  }
+
+  .md\:h-\[705px\] {
+    height: 705px;
+  }
+
   .md\:w-\[204px\] {
     width: 204px;
+  }
+
+  .md\:w-\[705px\] {
+    width: 705px;
+  }
+
+  .md\:w-min {
+    width: -moz-min-content;
+    width: min-content;
   }
 
   .md\:grid-cols-2 {
@@ -1035,6 +1040,10 @@ video {
     --tw-space-x-reverse: 0;
     margin-right: calc(0.5rem * var(--tw-space-x-reverse));
     margin-left: calc(0.5rem * calc(1 - var(--tw-space-x-reverse)));
+  }
+
+  .md\:p-16 {
+    padding: 4rem;
   }
 }
 
@@ -1053,16 +1062,16 @@ video {
     height: 523px;
   }
 
-  .xl\:h-\[585px\] {
-    height: 585px;
-  }
-
   .xl\:h-\[720px\] {
     height: 720px;
   }
 
   .xl\:max-h-screen {
     max-height: 100vh;
+  }
+
+  .xl\:w-\[204px\] {
+    width: 204px;
   }
 
   .xl\:w-\[520px\] {
@@ -1113,5 +1122,10 @@ video {
 
   .xl\:p-5 {
     padding: 1.25rem;
+  }
+
+  .xl\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
   }
 }
